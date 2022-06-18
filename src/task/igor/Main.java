@@ -1,10 +1,15 @@
-package java.task.igor;
+package task.igor;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //Making objects
-        Input input = new Input();
+        List<Student> st = Priorities.getStudents(Input.getInput());
 
-        System.out.println(Priorities.getStudents(input.getInput()));
+        //Output
+        System.out.println("\n\nOutput: ");
+        for(Student elem : st) {
+            System.out.println(elem.getName());
+        }
     }
 }

@@ -1,4 +1,4 @@
-package java.task.igor;
+package task.igor;
 
 public class Student {
 
@@ -6,21 +6,17 @@ public class Student {
     private final String name;
     private final double cgpa;
 
+    //Constructor
     public Student(int id, String name, double cgpa) {
         this.id = id;
         this.name = name;
         this.cgpa = cgpa;
     }
 
-    public int getID() {
-        return this.id;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public double getCGPA() {
-        return this.cgpa;
-    }
+    //ID getter
+    public int getID() { return this.id; }
+    //Name getter
+    public String getName() { return this.name; }
+    //CGPA getter
+    public double getCGPA() { return this.cgpa; }
 }

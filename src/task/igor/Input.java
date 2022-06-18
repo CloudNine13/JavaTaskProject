@@ -1,10 +1,11 @@
-package java.task.igor;
+package task.igor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Input {
-    public List<String> getInput() {
+    private Input() {}
+    public static List<String> getInput() {
         List<String> input = new ArrayList<>();
         input.add("12");
         input.add("ENTER John 3.75 50");
