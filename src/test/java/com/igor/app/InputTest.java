@@ -21,7 +21,8 @@ class InputTest {
     @DisplayName("Testing getInput method")
     void getInput() {
         assertThat(input).isInstanceOf(List.class).contains("SERVED");
-        assertThat(input.get(0)).doesNotContain("SERVED").doesNotContain("ENTER");
+        assertThat(input.get(0)).doesNotContain("SERVED");
+        assertThat(Integer.parseInt(input.get(0))).isInstanceOf(Integer.class);
     }
 
     @AfterEach
