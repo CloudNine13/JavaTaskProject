@@ -1,4 +1,4 @@
-package task.igor;
+package com.igor.app;
 
 import java.util.ArrayList;
 import java.util.List;

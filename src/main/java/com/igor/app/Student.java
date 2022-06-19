@@ -1,4 +1,4 @@
-package task.igor;
+package com.igor.app;
 
 public class Student {
 
@@ -20,3 +20,4 @@ public class Student {
     //CGPA getter
     public double getCGPA() { return this.cgpa; }
 }
+

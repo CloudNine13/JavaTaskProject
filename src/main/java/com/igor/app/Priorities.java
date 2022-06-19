@@ -1,4 +1,4 @@
-package task.igor;
+package com.igor.app;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -18,14 +18,14 @@ public class Priorities {
             if (events.get(i).equals("SERVED")) {
                 filterStudents(students);
             } else {
-                // Adding new Student to List<Student>
+                // Adding new com.igor.app.Student to List<com.igor.app.Student>
                 students.add(stringToStudent(events.get(i)));
             }
         }
         return students;
     }
 
-    //Splitting strings and adding them to Student
+    //Splitting strings and adding them to com.igor.app.Student
     private static Student stringToStudent(String strings) {
         String[] parts = strings.split(" ");
         int id = Integer.parseInt(parts[3]);
@@ -43,7 +43,7 @@ public class Priorities {
             // Sorted by name
             st.sort(Comparator.comparing(Student::getName));
 
-            /* This if does not filter anything because there is no same names in task input*/
+            /* This "if" does not filter anything because there is no same names in task input*/
             if(checkName(st)) {
                 // Sorted by ID
                 st.sort(Comparator.comparingInt(Student::getID));

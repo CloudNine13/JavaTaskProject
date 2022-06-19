@@ -1,4 +1,4 @@
-package task.igor;
+package com.igor.app;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ public class Main {
         List<Student> st = Priorities.getStudents(Input.getInput());
 
         //Output
-        System.out.println("\n\nOutput: ");
+        System.out.println("\nOutput: ");
         for(Student elem : st) {
             System.out.println(elem.getName());
         }
